@@ -1,7 +1,7 @@
-TR BannerView
+#TR BannerView
 
-如何引用：
-  Add it in your root build.gradle at the end of repositories:
+##如何引用：
+###Add it in your root build.gradle at the end of repositories:
   allprojects {
 		repositories {
 			...
@@ -14,7 +14,7 @@ TR BannerView
 	        implementation 'com.github.sidan26:BannerView:Tag'
 	}
  
-在xml中应用
+###在xml中应用
   <com.example.tyr.bannerview.view.TRBannerView
         android:id="@+id/banner"
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@ TR BannerView
         android:layout_height="140dp">
     </com.example.tyr.bannerview.view.TRBannerView
 
-在java代码中：
+###在java代码中：
    //传入匿名的TRBannerAdapter
    trBannerView.setAdapter(new TRBannerAdapter() {
             @Override
