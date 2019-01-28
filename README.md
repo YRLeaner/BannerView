@@ -35,8 +35,8 @@
     </com.example.tyr.bannerview.view.TRBannerView
 ```
 ### 在java代码中：
-   //传入匿名的TRBannerAdapter
    ```
+   //传入匿名的TRBannerAdapter
    trBannerView.setAdapter(new TRBannerAdapter() {
             @Override
             public View getView(int position, View mConvertView) {
