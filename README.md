@@ -1,20 +1,21 @@
 # TR BannerView
 
 ## 如何引用：  
-Add it in your root build.gradle at the end of repositories: <br /> 
-allprojects {<br />  
-repositories {<br />
+  ```
+  Add it in your root build.gradle at the end of repositories:
+	allprojects {  
+		repositories{
 			...
 			maven { url 'https://jitpack.io' }
 		}
+	} 
+  Add the dependency
+  	dependencies{
+		implementation 'com.github.sidan26:BannerView:v1.2'
 	}
-  
-  Step 2. Add the dependency
-  dependencies {
-	        implementation 'com.github.sidan26:BannerView:Tag'
-	}
-	'''
+```
 ### 在xml中应用
+  ```
   <com.example.tyr.bannerview.view.TRBannerView
         android:id="@+id/banner"
         android:layout_width="match_parent"
@@ -32,9 +33,10 @@ repositories {<br />
         app:dotIndicatorNormal="@android:color/white"
         android:layout_height="140dp">
     </com.example.tyr.bannerview.view.TRBannerView
-
+```
 ### 在java代码中：
    //传入匿名的TRBannerAdapter
+   ```
    trBannerView.setAdapter(new TRBannerAdapter() {
             @Override
             public View getView(int position, View mConvertView) {
@@ -59,8 +61,9 @@ repositories {<br />
             public String getDesc(int position) {
                 return position+" ";
             }
-        });
-        //设置banner自动滚动
-        trBannerView.startRoll();
-        //设置每一页的点击事件
-        trBannerView.setOnBannerItemClickListener(this);
+    });
+    //设置banner自动滚动
+    trBannerView.startRoll();
+    //设置每一页的点击事件
+    trBannerView.setOnBannerItemClickListener(this);
+   ```
